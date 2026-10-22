@@ -1,4 +1,4 @@
-// FivoScore MSME Dataset and Algorithm Engine
+// Manalix MSME Dataset and Algorithm Engine
 
 export const PRELOADED_MSMES = [
   {
@@ -17,7 +17,8 @@ export const PRELOADED_MSMES = [
     vintageYears: 8.5,
     registeredOffice: "Plot No. C-44, MIDC Industrial Area, Chakan, Pune, Maharashtra - 410501",
     directors: ["Madan V. Patil (Managing Director)", "Sunita M. Patil (Director)"],
-    fivoScore: 785,
+    manalixScore: 785,
+    score: 785,
     scoreTier: "Tier A+ (Prime Credit)",
     riskRating: "Low Risk",
     percentile: 92,
@@ -142,7 +143,8 @@ export const PRELOADED_MSMES = [
     vintageYears: 10.8,
     registeredOffice: "Apex Tower, 4th Floor, Okhla Industrial Area Phase-III, New Delhi - 110020",
     directors: ["Vikas Aggarwal (Director)", "Harshita Aggarwal (Director)"],
-    fivoScore: 820,
+    manalixScore: 820,
+    score: 820,
     scoreTier: "Tier A+ (Exceptional)",
     riskRating: "Very Low Risk",
     percentile: 97,
@@ -267,7 +269,8 @@ export const PRELOADED_MSMES = [
     vintageYears: 9.3,
     registeredOffice: "Surat Textile Market, Ring Road, Surat, Gujarat - 395002",
     directors: ["Ghanshyamdas Agarwal (Partner)", "Manoj Kumar Agarwal (Partner)"],
-    fivoScore: 745,
+    manalixScore: 745,
+    score: 745,
     scoreTier: "Tier A (Good Credit)",
     riskRating: "Low Risk",
     percentile: 84,
@@ -392,7 +395,8 @@ export const PRELOADED_MSMES = [
     vintageYears: 6.0,
     registeredOffice: "6th Floor, Cyber Park, Electronic City Phase 1, Bengaluru, Karnataka - 560100",
     directors: ["Aditya N. Kulkarni (Founder & CEO)", "Pooja Hegde (Co-Founder & CTO)"],
-    fivoScore: 795,
+    manalixScore: 795,
+    score: 795,
     scoreTier: "Tier A+ (High Growth)",
     riskRating: "Low Risk",
     percentile: 94,
@@ -517,7 +521,8 @@ export const PRELOADED_MSMES = [
     vintageYears: 8.8,
     registeredOffice: "Cold Storage Complex, NH-48 Express Highway, Sriperumbudur, Chennai - 602105",
     directors: ["K. S. Ramanathan (Director)", "R. Balasubramanian (Director)"],
-    fivoScore: 710,
+    manalixScore: 710,
+    score: 710,
     scoreTier: "Tier B+ (Satisfactory)",
     riskRating: "Moderate Risk",
     percentile: 72,
@@ -642,7 +647,8 @@ export const PRELOADED_MSMES = [
     vintageYears: 7.4,
     registeredOffice: "Industrial Estate, Ramnagar, Varanasi, Uttar Pradesh - 221008",
     directors: ["Devendra Nath Tiwari (Proprietor)"],
-    fivoScore: 660,
+    manalixScore: 660,
+    score: 660,
     scoreTier: "Tier B (Moderate Risk / Growth)",
     riskRating: "Moderate Risk",
     percentile: 61,
@@ -836,7 +842,8 @@ export function generateDeterministicMSME(query) {
     vintageYears: parseFloat(vintage),
     registeredOffice: `Plot No. ${absHash % 150 + 1}, Industrial Estate, Phase II, ${detectedState} - 400001`,
     directors: ["Promoter Director A", "Promoter Director B"],
-    fivoScore: score,
+    manalixScore: score,
+    score: score,
     scoreTier: scoreTier,
     riskRating: riskRating,
     percentile: percentile,
@@ -974,8 +981,8 @@ export function searchMSMEs(query) {
   return [];
 }
 
-// 6 Core Factors Specification Data
-export const FIVOSCORE_FACTORS_SPEC = [
+// 6 Core Factors Specification Data (Manalix Framework)
+export const MANALIX_FACTORS_SPEC = [
   {
     id: "gst",
     title: "GST Discipline & Filing Compliance",
@@ -1146,36 +1153,36 @@ export const COMPARISON_DATA = [
   {
     feature: "Primary Evaluation Core",
     traditional: "Past loan repayments & collateral history",
-    fivoscore: "Real-time GST filings & dynamic cash-flow velocity"
+    manalix: "Real-time GST filings & dynamic cash-flow velocity"
   },
   {
     feature: "Suitability for Thin-File MSMEs",
     traditional: "Poor (Often rejects businesses without prior loans)",
-    fivoscore: "Built for thin-file borrowers with active business trade"
+    manalix: "Built for thin-file borrowers with active business trade"
   },
   {
     feature: "Data Refresh Frequency",
     traditional: "30-45 days delayed bureau reporting",
-    fivoscore: "Real-time daily & monthly regulatory telemetry"
+    manalix: "Real-time daily & monthly regulatory telemetry"
   },
   {
     feature: "Turnover & GST Integration",
     traditional: "None (Relies solely on credit tradelines)",
-    fivoscore: "Direct GSTR-1, 3B, and e-way bill reconciliation"
+    manalix: "Direct GSTR-1, 3B, and e-way bill reconciliation"
   },
   {
     feature: "Banking & Liquidity Assessment",
     traditional: "Static 6-month PDF bank statement sampling",
-    fivoscore: "Live digital Account Aggregator flow analysis"
+    manalix: "Live digital Account Aggregator flow analysis"
   },
   {
     feature: "Explainability & Improvement Roadmap",
     traditional: "Opaque 3-digit score without granular remedies",
-    fivoscore: "Full 6-factor explainable breakdown + actionable tips"
+    manalix: "Full 6-factor explainable breakdown + actionable tips"
   },
   {
     feature: "Loan Disbursal Acceleration",
     traditional: "14-25 days manual underwriting process",
-    fivoscore: "Instant pre-approval in under 3 minutes"
+    manalix: "Instant pre-approval in under 3 minutes"
   }
 ];

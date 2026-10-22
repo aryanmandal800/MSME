@@ -200,7 +200,7 @@ export default function Hero({ onSelectMSME, searchInputRef }) {
                     </div>
                     <div className="dropdown-item-right">
                       <div className="item-score-pill">
-                        <span className="score-num">{item.fivoScore}</span>
+                        <span className="score-num">{item.manalixScore || item.score}</span>
                         <span className="score-lbl">Score</span>
                       </div>
                       <ArrowRight size={16} className="item-arrow" />
@@ -276,7 +276,7 @@ export default function Hero({ onSelectMSME, searchInputRef }) {
 
           {/* Card 4: Live Sample Preview Widget */}
           <div 
-            className="sample-fivo-card"
+            className="sample-manalix-card"
             onClick={() => {
               const madan = PRELOADED_MSMES[0];
               onSelectMSME(madan);

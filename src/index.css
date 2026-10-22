@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FIVOSCORE ENTERPRISE DESIGN SYSTEM (CLEAN, MINIMALIST, HIGH-END FINTECH)
+   MANALIX ENTERPRISE DESIGN SYSTEM (CLEAN, MINIMALIST, HIGH-END FINTECH)
    Inspired by Stripe, Brex, and modern Indian FinTech (Razorpay, FinAGG)
    ========================================================================== */
 
@@ -833,7 +833,7 @@ a {
 }
 
 /* Sample Live Preview Card (Clean Fintech Widget) */
-.sample-fivo-card {
+.sample-manalix-card {
   background: var(--white);
   border: 1.5px solid rgba(30, 167, 255, 0.35);
   border-radius: var(--radius-lg);
@@ -847,7 +847,7 @@ a {
   transition: all 0.2s ease;
 }
 
-.sample-fivo-card:hover {
+.sample-manalix-card:hover {
   border-color: var(--blue-500);
   box-shadow: var(--shadow-lg);
   transform: translateY(-2px);
@@ -1389,7 +1389,7 @@ a {
 }
 
 /* ==========================================================================
-   HOW FIVOSCORE IS GENERATED (Clean Stepper & Modern Diagram)
+   HOW MANALIX SCORE IS GENERATED (Clean Stepper & Modern Diagram)
    ========================================================================== */
 
 .how-it-works-section {
@@ -2195,9 +2195,9 @@ a {
 
 .th-feature { width: 30%; background: var(--slate-50); }
 .th-traditional { width: 35%; background: var(--slate-50); color: var(--slate-500); }
-.th-fivoscore { width: 35%; background: var(--blue-50); }
+.th-manalix { width: 35%; background: var(--blue-50); }
 
-.th-fivoscore-badge {
+.th-manalix-badge {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -2230,7 +2230,7 @@ a {
   color: var(--slate-600);
 }
 
-.td-fivoscore {
+.td-manalix {
   background: rgba(30, 167, 255, 0.03);
   font-weight: 600;
   color: var(--navy-900);

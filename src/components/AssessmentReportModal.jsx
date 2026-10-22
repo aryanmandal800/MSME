@@ -47,9 +47,8 @@ export default function AssessmentReportModal({ msme, onClose }) {
     }, 1200);
   };
 
-  // Calculate score gauge stroke offset
-  // Range is 300 to 900 -> 600 point span
-  const normalizedScore = Math.max(0, Math.min(600, msme.fivoScore - 300));
+  const scoreVal = msme.manalixScore || msme.score || 750;
+  const normalizedScore = Math.max(0, Math.min(600, scoreVal - 300));
   const scorePercent = normalizedScore / 600;
   const strokeDashoffset = 440 - (440 * scorePercent * 0.75); // 270 degree arc
 
@@ -170,7 +169,7 @@ export default function AssessmentReportModal({ msme, onClose }) {
                 </svg>
 
                 <div className="gauge-center-text">
-                  <span className="gauge-score-number">{msme.fivoScore}</span>
+                  <span className="gauge-score-number">{scoreVal}</span>
                   <span className="gauge-score-max">/ 900</span>
                   <span className="gauge-tier-pill">{msme.scoreTier}</span>
                 </div>

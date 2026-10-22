@@ -29,7 +29,7 @@ export default function ScoreSimulator({ onOpenAssessmentWithSimulated }) {
     setHasNoLegalDisputes(true);
   };
 
-  // Algorithmic calculation of simulated FivoScore (300 to 900)
+  // Algorithmic calculation of simulated Manalix Score (300 to 900)
   // GST: 25% weight -> up to 150 pts
   const gstPoints = Math.round((gstOnTimeMonths / 24) * 150);
 
@@ -279,7 +279,8 @@ export default function ScoreSimulator({ onOpenAssessmentWithSimulated }) {
                       vintageYears: vintageYears,
                       registeredOffice: 'Industrial Estate, Andheri East, Mumbai, Maharashtra - 400093',
                       directors: ['Promoter Executive A', 'Promoter Executive B'],
-                      fivoScore: simulatedScore,
+                      manalixScore: simulatedScore,
+                      score: simulatedScore,
                       scoreTier: simulatedTier,
                       riskRating: simulatedScore >= 750 ? 'Low Risk' : 'Moderate Risk',
                       percentile: Math.min(99, Math.round((simulatedScore / 900) * 100)),

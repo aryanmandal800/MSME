@@ -107,7 +107,7 @@ export default function MsmeDirectory({ onSelectMSME }) {
                   <span className="card-trade-name">Trade: {item.tradeName}</span>
                 </div>
                 <div className="card-score-pill">
-                  <span className="pill-num">{item.fivoScore}</span>
+                  <span className="pill-num">{item.manalixScore || item.score}</span>
                   <span className="pill-sub">Score</span>
                 </div>
               </div>

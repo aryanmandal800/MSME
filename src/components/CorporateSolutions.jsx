@@ -23,7 +23,7 @@ export default function CorporateSolutions({ onOpenEvaluate }) {
             <span>Enterprise & Anchor Solutions</span>
           </div>
           <h2 className="section-title">
-            FivoScore for <span className="text-gradient">Corporates, Anchors & Lenders</span>
+            Manalix for <span className="text-gradient">Corporates, Anchors & Lenders</span>
           </h2>
           <p className="section-subtitle">
             Powering automated vendor due diligence, supply chain invoice discounting, 
@@ -58,7 +58,7 @@ export default function CorporateSolutions({ onOpenEvaluate }) {
             <h3 className="corp-card-title">Dealer Network & Supply Chain Financing (SCF)</h3>
             <p className="corp-card-desc">
               Empower your dealership network with instantaneous working capital limits. Lenders extend 
-              unsecured credit directly to your verified dealers based on FivoScore trade velocity.
+              unsecured credit directly to your verified dealers based on Manalix trade velocity.
             </p>
             <ul className="corp-feature-list">
               <li><CheckCircle2 size={15} color="#10B981" /> Pre-approved inventory & invoice discounting limits</li>
@@ -92,9 +92,9 @@ export default function CorporateSolutions({ onOpenEvaluate }) {
               <Code2 size={15} color="#1EA7FF" />
               <span>Developer-Ready Underwriting REST API</span>
             </div>
-            <h3 className="api-headline">Integrate FivoScore Directly Into Your LOS / LMS</h3>
+            <h3 className="api-headline">Integrate Manalix Directly Into Your LOS / LMS</h3>
             <p className="api-desc">
-              Plug FivoScore's AI decisioning engine into your existing loan origination system or ERP 
+              Plug Manalix's AI decisioning engine into your existing loan origination system or ERP 
               with our secured REST APIs, webhooks, and SDKs. Process over 50,000 corporate assessments per hour.
             </p>
             <div className="api-cta-row">
@@ -110,7 +110,7 @@ export default function CorporateSolutions({ onOpenEvaluate }) {
                 <span className="dot red" />
                 <span className="dot yellow" />
                 <span className="dot green" />
-                <span className="code-filename">POST /v2/underwrite/fivoscore</span>
+                <span className="code-filename">POST /v2/underwrite/manalix</span>
               </div>
               <pre className="code-content">
 {`// Sample Enterprise Underwriting Payload
@@ -124,7 +124,7 @@ export default function CorporateSolutions({ onOpenEvaluate }) {
 
 // Response (HTTP 200 OK)
 {
-  "fivoscore": 785,
+  "score": 785,
   "tier": "A+ Prime",
   "preapproved_limit": 4500000,
   "ability_to_pay": 88,

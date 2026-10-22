@@ -28,8 +28,8 @@ export default function ComparisonSection() {
               <tr>
                 <th className="th-feature">Assessment Dimension</th>
                 <th className="th-traditional">Traditional Credit Bureaus (CIBIL / Experian)</th>
-                <th className="th-fivoscore">
-                  <div className="th-fivoscore-badge">
+                <th className="th-manalix">
+                  <div className="th-manalix-badge">
                     <span>Manalix Technology AI Model</span>
                     <span className="recommended-tag">Next-Gen</span>
                   </div>
@@ -48,10 +48,10 @@ export default function ComparisonSection() {
                       <span>{row.traditional}</span>
                     </div>
                   </td>
-                  <td className="td-fivoscore">
+                  <td className="td-manalix">
                     <div className="td-content-wrap">
                       <span className="check-bullet">✓</span>
-                      <span>{row.fivoscore}</span>
+                      <span>{row.manalix}</span>
                     </div>
                   </td>
                 </tr>

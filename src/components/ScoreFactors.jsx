@@ -12,12 +12,12 @@ import {
   SlidersHorizontal,
   Info
 } from 'lucide-react';
-import { FIVOSCORE_FACTORS_SPEC } from '../data/msmeData';
+import { MANALIX_FACTORS_SPEC } from '../data/msmeData';
 
 export default function ScoreFactors({ onExploreFactor }) {
   const [selectedFactorId, setSelectedFactorId] = useState('gst');
 
-  const activeFactor = FIVOSCORE_FACTORS_SPEC.find(f => f.id === selectedFactorId) || FIVOSCORE_FACTORS_SPEC[0];
+  const activeFactor = MANALIX_FACTORS_SPEC.find(f => f.id === selectedFactorId) || MANALIX_FACTORS_SPEC[0];
 
   const getIcon = (iconName, color) => {
     switch (iconName) {
@@ -51,7 +51,7 @@ export default function ScoreFactors({ onExploreFactor }) {
 
         {/* 6 Factors Interactive Grid */}
         <div className="factors-overview-grid">
-          {FIVOSCORE_FACTORS_SPEC.map((factor) => {
+          {MANALIX_FACTORS_SPEC.map((factor) => {
             const isSelected = factor.id === selectedFactorId;
             return (
               <div 
