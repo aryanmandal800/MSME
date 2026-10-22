@@ -29,7 +29,7 @@ export default function HowItWorks() {
             <span>Underwriting Architecture</span>
           </div>
           <h2 className="section-title">
-            How We Generate <span className="text-gradient">FivoScore</span>
+            How We Generate <span className="text-gradient">The Score</span>
           </h2>
           <p className="section-subtitle">
             An explainable, multi-source AI underwriting framework built specifically for Indian MSMEs — 
@@ -124,7 +124,7 @@ export default function HowItWorks() {
                       </div>
                     </div>
                     <div className="flow-arrow">↓</div>
-                    <div className="flow-bubble composite">Composite FIVO Vector (300 - 900)</div>
+                    <div className="flow-bubble composite">Composite Score Vector (300 - 900)</div>
                   </div>
                 )}
 
@@ -164,7 +164,7 @@ export default function HowItWorks() {
             </div>
             <h4 className="pillar-title">Cash-Flow First Underwriting</h4>
             <p className="pillar-desc">
-              Traditional banks require immovable property collateral. FivoScore evaluates business vitality through 
+              Traditional banks require immovable property collateral. Manalix Technology evaluates business vitality through 
               real-time bank deposits, invoice realization velocity, and working capital churn.
             </p>
           </div>
@@ -187,7 +187,7 @@ export default function HowItWorks() {
             <h4 className="pillar-title">100% Explainable & Transparent</h4>
             <p className="pillar-desc">
               Every point in your 300-900 score is broken down into clear actionable drivers. If your score drops, 
-              FivoScore shows you exactly which metric caused it and provides a step-by-step roadmap to repair it.
+              Manalix Technology shows you exactly which metric caused it and provides a step-by-step roadmap to repair it.
             </p>
           </div>
         </div>

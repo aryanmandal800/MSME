@@ -85,7 +85,7 @@ export default function Hero({ onSelectMSME, searchInputRef }) {
 
         {/* Subtitle Description */}
         <p className="hero-subtitle">
-          FIVO Score provides instant, AI-powered insights on your business’s financial health, compliance, 
+          Manalix Technology provides instant, AI-powered insights on your business’s financial health, compliance, 
           and pre-approved credit lines from ₹10 Lakhs to ₹5 Crores.
         </p>
 
@@ -164,7 +164,7 @@ export default function Hero({ onSelectMSME, searchInputRef }) {
             <button 
               type="submit" 
               className="search-submit-btn" 
-              aria-label="Search FivoScore"
+              aria-label="Search Score"
               id="hero-search-submit"
             >
               <Search size={18} color="#FFFFFF" />
@@ -201,7 +201,7 @@ export default function Hero({ onSelectMSME, searchInputRef }) {
                     <div className="dropdown-item-right">
                       <div className="item-score-pill">
                         <span className="score-num">{item.fivoScore}</span>
-                        <span className="score-lbl">FivoScore</span>
+                        <span className="score-lbl">Score</span>
                       </div>
                       <ArrowRight size={16} className="item-arrow" />
                     </div>
@@ -297,7 +297,7 @@ export default function Hero({ onSelectMSME, searchInputRef }) {
             </div>
 
             <div>
-              <div className="factors-heading">Factors affecting FivoScore:</div>
+              <div className="factors-heading">Factors affecting Score:</div>
               <div className="factors-tags-cloud">
                 <span className="factor-tag">
                   <CheckCircle2 size={11} color="#1EA7FF" /> Bureau Info

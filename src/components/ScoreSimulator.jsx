@@ -89,7 +89,7 @@ export default function ScoreSimulator({ onOpenAssessmentWithSimulated }) {
             <span>Interactive Model Simulator</span>
           </div>
           <h2 className="section-title">
-            FivoScore <span className="text-gradient">Underwriting Simulator</span>
+            MSME Score <span className="text-gradient">Underwriting Simulator</span>
           </h2>
           <p className="section-subtitle">
             Tweak key operational metrics below to observe in real-time how GST filing discipline, 

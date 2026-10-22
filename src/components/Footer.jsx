@@ -1,4 +1,5 @@
 import React from 'react';
+import logoImg from '../assets/logo.png';
 import { ShieldCheck, Lock, Building2, CheckCircle2 } from 'lucide-react';
 
 export default function Footer({ onEvaluateClick }) {
@@ -17,7 +18,7 @@ export default function Footer({ onEvaluateClick }) {
             <p>Get your instant AI assessment, explainable factors, and bankable credit lines in under 2 minutes.</p>
           </div>
           <button className="btn-pre-cta" onClick={onEvaluateClick}>
-            Check MSME FivoScore Free
+            Check MSME Score Free
           </button>
         </div>
       </div>
@@ -26,18 +27,15 @@ export default function Footer({ onEvaluateClick }) {
         <div className="footer-cols-grid">
           {/* Brand Col */}
           <div className="footer-col brand-col">
-            <div className="brand-logo footer-logo">
-              <div className="logo-icon-wrap">
-                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="32" height="32" rx="8" fill="#FFFFFF" />
-                  <path d="M9 7H23V11H13.8V14.5H20.5V18.5H13.8V25H9V7Z" fill="#1EA7FF" />
-                  <circle cx="23.5" cy="22.5" r="3.5" fill="#00D2B4" />
-                </svg>
-              </div>
-              <span className="logo-title text-white">Fivo<span className="logo-accent">Score</span></span>
+            <div className="brand-logo footer-logo" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <img 
+                src={logoImg} 
+                alt="Manalix Technology" 
+                style={{ height: '42px', width: 'auto', background: '#FFFFFF', padding: '5px 12px', borderRadius: '8px', display: 'block' }} 
+              />
             </div>
             <p className="footer-brand-desc">
-              FivoScore Private Limited (FinAGG Technologies). India's premier AI-driven MSME credit assessment 
+              Manalix Technology Private Limited. <em>Smarter Finance. Stronger Tomorrow.</em> India's premier AI-driven MSME credit assessment 
               and cash-flow underwriting platform, bridging the working capital gap for over 6.3 Crore micro, small, 
               and medium enterprises.
             </p>
@@ -74,7 +72,7 @@ export default function Footer({ onEvaluateClick }) {
               <li><a href="#how-it-works-section" onClick={() => scrollTo('how-it-works-section')}>How MSME Score is Calculated</a></li>
               <li><a href="#simulator-section" onClick={() => scrollTo('simulator-section')}>Interactive Score Simulator</a></li>
               <li><a href="#directory-section" onClick={() => scrollTo('directory-section')}>Peer Benchmarking Directory</a></li>
-              <li><a href="#comparison-section" onClick={() => scrollTo('comparison-section')}>Why FivoScore beats CIBIL for MSMEs</a></li>
+              <li><a href="#comparison-section" onClick={() => scrollTo('comparison-section')}>Why Score beats CIBIL for MSMEs</a></li>
             </ul>
           </div>
 
@@ -82,16 +80,16 @@ export default function Footer({ onEvaluateClick }) {
           <div className="footer-col">
             <h4 className="footer-col-title">Corporate Headquarters</h4>
             <p className="footer-contact-item">
-              <strong>FivoScore Private Limited</strong><br />
-              FinAGG Towers, Plot 14, Sector 44,<br />
-              Gurugram, NCR, Haryana - 122003
+              <strong>Manalix Technology Private Limited</strong><br />
+              Viman Nagar, Pune,<br />
+              Maharashtra - 411014
             </p>
             <p className="footer-contact-item mt-2">
               <strong>Regional MSME Hubs:</strong><br />
               BKC, Mumbai • Surat Textile Hub • Electronic City, Bengaluru
             </p>
             <p className="footer-contact-item mt-2">
-              MSME Helpdesk: <strong>support@fivoscore.in</strong>
+              MSME Helpdesk: <strong>support@manalixtechnology.com</strong>
             </p>
           </div>
         </div>
@@ -99,7 +97,7 @@ export default function Footer({ onEvaluateClick }) {
         {/* Bottom Legal Copyright */}
         <div className="footer-bottom-bar">
           <div className="copyright-text">
-            © {new Date().getFullYear()} FivoScore Private Limited. Exclusively built for Indian Micro, Small &amp; Medium Enterprises.
+            © {new Date().getFullYear()} Manalix Technology Private Limited. Exclusively built for Indian Micro, Small &amp; Medium Enterprises.
           </div>
           <div className="footer-legal-links">
             <a href="#terms" onClick={(e) => e.preventDefault()}>Terms of Service</a>

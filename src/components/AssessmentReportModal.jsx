@@ -138,7 +138,7 @@ export default function AssessmentReportModal({ msme, onClose }) {
             {/* Left: Animated Score Gauge */}
             <div className="score-gauge-card">
               <div className="gauge-header">
-                <span className="gauge-title">FIVO Credit Score</span>
+                <span className="gauge-title">Credit Score</span>
                 <span className="gauge-tagline">AI Multi-Factor Assessment</span>
               </div>
 
@@ -228,7 +228,7 @@ export default function AssessmentReportModal({ msme, onClose }) {
                   <CheckCircle2 size={18} color="#10B981" />
                   <div>
                     <strong>Application Initiated Successfully!</strong>
-                    <p>FinAGG & Partner Bank underwriting desk has generated your reference: <strong>FIVO-DISB-{msme.id.toUpperCase()}</strong></p>
+                    <p>Manalix & Partner Bank underwriting desk has generated your reference: <strong>MANALIX-DISB-{msme.id.toUpperCase()}</strong></p>
                   </div>
                 </div>
               ) : (
@@ -254,7 +254,7 @@ export default function AssessmentReportModal({ msme, onClose }) {
             <div className="dual-index-header">
               <div className="dual-title-group">
                 <span className="dual-title">Dual-Vector Scoring Decomposition</span>
-                <span className="dual-desc">FivoScore independently evaluates liquidity capacity and repayment integrity</span>
+                <span className="dual-desc">Manalix independently evaluates liquidity capacity and repayment integrity</span>
               </div>
               <span className="dual-calibrated-badge">Calibrated Against 10L+ MSMEs</span>
             </div>
@@ -284,49 +284,54 @@ export default function AssessmentReportModal({ msme, onClose }) {
             </div>
           </div>
 
-          {/* Factor Navigation Tabs */}
+          {/* Factor Navigation Tabs (100% Screen Responsive Segmented Bar) */}
           <div className="factor-tabs-nav">
             <button 
               className={`factor-nav-btn ${activeTab === 'overview' ? 'active' : ''}`}
               onClick={() => setActiveTab('overview')}
             >
-              <TrendingUp size={16} />
-              <span>Financial Overview</span>
+              <TrendingUp size={15} />
+              <span>Overview</span>
             </button>
             <button 
               className={`factor-nav-btn ${activeTab === 'gst' ? 'active' : ''}`}
               onClick={() => setActiveTab('gst')}
             >
-              <Receipt size={16} />
-              <span>GST Discipline ({msme.factors.gstDiscipline.score})</span>
+              <Receipt size={15} />
+              <span>GST Discipline</span>
+              <span className="tab-score-chip">{msme.factors.gstDiscipline.score}</span>
             </button>
             <button 
               className={`factor-nav-btn ${activeTab === 'cashflow' ? 'active' : ''}`}
               onClick={() => setActiveTab('cashflow')}
             >
-              <Banknote size={16} />
-              <span>Cash Flow Velocity ({msme.factors.cashFlowVelocity.score})</span>
+              <Banknote size={15} />
+              <span>Cash Flow</span>
+              <span className="tab-score-chip">{msme.factors.cashFlowVelocity.score}</span>
             </button>
             <button 
               className={`factor-nav-btn ${activeTab === 'bureau' ? 'active' : ''}`}
               onClick={() => setActiveTab('bureau')}
             >
-              <ShieldCheck size={16} />
-              <span>Bureau Tradelines ({msme.factors.bureauHealth.score})</span>
+              <ShieldCheck size={15} />
+              <span>Bureau Health</span>
+              <span className="tab-score-chip">{msme.factors.bureauHealth.score}</span>
             </button>
             <button 
               className={`factor-nav-btn ${activeTab === 'supplychain' ? 'active' : ''}`}
               onClick={() => setActiveTab('supplychain')}
             >
-              <Network size={16} />
-              <span>Supply Chain ({msme.factors.supplyChainQuality.score})</span>
+              <Network size={15} />
+              <span>Supply Chain</span>
+              <span className="tab-score-chip">{msme.factors.supplyChainQuality.score}</span>
             </button>
             <button 
               className={`factor-nav-btn ${activeTab === 'statutory' ? 'active' : ''}`}
               onClick={() => setActiveTab('statutory')}
             >
-              <FileCheck size={16} />
-              <span>Compliance & KYC ({msme.factors.statutoryKyc.score})</span>
+              <FileCheck size={15} />
+              <span>Compliance &amp; KYC</span>
+              <span className="tab-score-chip">{msme.factors.statutoryKyc.score}</span>
             </button>
           </div>
 
@@ -391,7 +396,7 @@ export default function AssessmentReportModal({ msme, onClose }) {
                     <h3 className="factor-pane-title">{msme.factors.gstDiscipline.status} GST Filing Record</h3>
                     <p className="factor-pane-desc">{msme.factors.gstDiscipline.summary}</p>
                   </div>
-                  <div className="factor-weight-pill">Weight in FivoScore: 25%</div>
+                  <div className="factor-weight-pill">Weight in Score: 25%</div>
                 </div>
 
                 <div className="metrics-cards-grid">
@@ -418,7 +423,7 @@ export default function AssessmentReportModal({ msme, onClose }) {
                     <h3 className="factor-pane-title">{msme.factors.cashFlowVelocity.status} Banking Liquidity</h3>
                     <p className="factor-pane-desc">{msme.factors.cashFlowVelocity.summary}</p>
                   </div>
-                  <div className="factor-weight-pill">Weight in FivoScore: 25%</div>
+                  <div className="factor-weight-pill">Weight in Score: 25%</div>
                 </div>
 
                 <div className="metrics-cards-grid">
@@ -445,7 +450,7 @@ export default function AssessmentReportModal({ msme, onClose }) {
                     <h3 className="factor-pane-title">{msme.factors.bureauHealth.status} Commercial Credit Track</h3>
                     <p className="factor-pane-desc">{msme.factors.bureauHealth.summary}</p>
                   </div>
-                  <div className="factor-weight-pill">Weight in FivoScore: 20%</div>
+                  <div className="factor-weight-pill">Weight in Score: 20%</div>
                 </div>
 
                 <div className="metrics-cards-grid">
@@ -472,7 +477,7 @@ export default function AssessmentReportModal({ msme, onClose }) {
                     <h3 className="factor-pane-title">{msme.factors.supplyChainQuality.status} Counterparties</h3>
                     <p className="factor-pane-desc">{msme.factors.supplyChainQuality.summary}</p>
                   </div>
-                  <div className="factor-weight-pill">Weight in FivoScore: 15%</div>
+                  <div className="factor-weight-pill">Weight in Score: 15%</div>
                 </div>
 
                 <div className="metrics-cards-grid">
@@ -499,7 +504,7 @@ export default function AssessmentReportModal({ msme, onClose }) {
                     <h3 className="factor-pane-title">{msme.factors.statutoryKyc.status} Statutory Compliance</h3>
                     <p className="factor-pane-desc">{msme.factors.statutoryKyc.summary}</p>
                   </div>
-                  <div className="factor-weight-pill">Weight in FivoScore: 10%</div>
+                  <div className="factor-weight-pill">Weight in Score: 10%</div>
                 </div>
 
                 <div className="metrics-cards-grid">
@@ -523,7 +528,7 @@ export default function AssessmentReportModal({ msme, onClose }) {
           <div className="recommendations-card">
             <div className="rec-header">
               <Sparkles size={18} color="#1EA7FF" />
-              <h3>AI Recommendations to Enhance Your FivoScore to 820+</h3>
+              <h3>AI Recommendations to Enhance Your Score to 820+</h3>
             </div>
             <div className="rec-list">
               <div className="rec-item">

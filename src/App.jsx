@@ -51,12 +51,12 @@ export default function App() {
           onEvaluateClick={handleEvaluateClick}
         />
 
-        {/* Core Pillars: All Factors That Determine MSME FivoScore */}
+        {/* Core Pillars: All Factors That Determine MSME Score */}
         <ScoreFactors 
           onExploreFactor={(factorId) => {}}
         />
 
-        {/* How MSME FivoScore is Generated (Algorithmic Methodology) */}
+        {/* How MSME Score is Generated (Algorithmic Methodology) */}
         <HowItWorks />
 
         {/* Interactive MSME Score Simulator */}
@@ -69,7 +69,7 @@ export default function App() {
           onSelectMSME={handleSelectMSME}
         />
 
-        {/* CIBIL vs FivoScore Comparison Table for MSMEs */}
+        {/* CIBIL vs Score Comparison Table for MSMEs */}
         <ComparisonSection />
 
         {/* Frequently Asked Questions by MSME Owners */}

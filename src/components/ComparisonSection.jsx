@@ -13,7 +13,7 @@ export default function ComparisonSection() {
             <span>The Underwriting Paradigm Shift</span>
           </div>
           <h2 className="section-title">
-            Traditional Bureau (CIBIL) vs <span className="text-gradient">FivoScore</span>
+            Traditional Bureau (CIBIL) vs <span className="text-gradient">Manalix Technology AI Model</span>
           </h2>
           <p className="section-subtitle">
             Why 6.3 Crore Indian MSMEs need dynamic cash-flow underwriting instead of 
@@ -30,7 +30,7 @@ export default function ComparisonSection() {
                 <th className="th-traditional">Traditional Credit Bureaus (CIBIL / Experian)</th>
                 <th className="th-fivoscore">
                   <div className="th-fivoscore-badge">
-                    <span>FivoScore (FinAGG AI Model)</span>
+                    <span>Manalix Technology AI Model</span>
                     <span className="recommended-tag">Next-Gen</span>
                   </div>
                 </th>
@@ -65,9 +65,9 @@ export default function ComparisonSection() {
           <div className="cta-left">
             <ShieldCheck size={28} color="#10B981" />
             <div>
-              <h4 className="cta-heading">Does checking my FivoScore impact my credit record?</h4>
+              <h4 className="cta-heading">Does checking my Score impact my credit record?</h4>
               <p className="cta-desc">
-                <strong>No.</strong> FivoScore performs a zero-impact "soft regulatory query" via GSTN and consent-based Account Aggregator. 
+                <strong>No.</strong> Manalix Technology performs a zero-impact "soft regulatory query" via GSTN and consent-based Account Aggregator. 
                 Your commercial CIBIL score remains completely unaffected.
               </p>
             </div>

@@ -26,7 +26,7 @@ export default function MsmeBenefits({ onEvaluateClick }) {
     },
     {
       title: "Lower Interest Rates (PSL)",
-      desc: "High FivoScores qualify under RBI Priority Sector Lending (PSL), slashing interest rates by 1.5% to 3.0% across leading banks.",
+      desc: "High Credit Scores qualify under RBI Priority Sector Lending (PSL), slashing interest rates by 1.5% to 3.0% across leading banks.",
       stat: "10.25% p.a.",
       statLabel: "Starting ROI",
       badge: "Interest Subsidy",
@@ -66,7 +66,7 @@ export default function MsmeBenefits({ onEvaluateClick }) {
             <span>Dedicated MSME Growth Suite</span>
           </div>
           <h2 className="section-title">
-            How FivoScore Empowers <span className="text-gradient">Every Indian MSME</span>
+            How Manalix Technology Empowers <span className="text-gradient">Every Indian MSME</span>
           </h2>
           <p className="section-subtitle">
             Designed exclusively for Micro, Small, and Medium Enterprises. Turn your regular GST filings 
@@ -114,7 +114,7 @@ export default function MsmeBenefits({ onEvaluateClick }) {
               <BadgeCheck size={24} color="#1EA7FF" />
               <div>
                 <h3 className="cat-title">Official MSME Classification Benchmarks (Government of India)</h3>
-                <p className="cat-sub">FivoScore automatically maps your GST and tax filings to your statutory Udyam bracket:</p>
+                <p className="cat-sub">Manalix Technology automatically maps your GST and tax filings to your statutory Udyam bracket:</p>
               </div>
             </div>
             <button className="btn-primary" onClick={onEvaluateClick}>

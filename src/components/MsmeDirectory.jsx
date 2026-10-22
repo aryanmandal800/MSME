@@ -108,7 +108,7 @@ export default function MsmeDirectory({ onSelectMSME }) {
                 </div>
                 <div className="card-score-pill">
                   <span className="pill-num">{item.fivoScore}</span>
-                  <span className="pill-sub">FivoScore</span>
+                  <span className="pill-sub">Score</span>
                 </div>
               </div>
 

@@ -1025,7 +1025,7 @@ export const FIVOSCORE_FACTORS_SPEC = [
     color: "#6366F1",
     bgLight: "rgba(99, 102, 241, 0.1)",
     description: "Assesses commercial credit histories across CIBIL, Experian, CRIF High Mark, including commercial rank (CMR) and promoter consumer credit.",
-    whyItMatters: "Verifies historical repayment integrity. Having active trade loans or working capital lines that are serviced with 0 Days Past Due (DPD) boosts FivoScore.",
+    whyItMatters: "Verifies historical repayment integrity. Having active trade loans or working capital lines that are serviced with 0 Days Past Due (DPD) boosts your Score.",
     keyMetrics: [
       "Commercial CIBIL Rank (CMR-1 to CMR-3 is Prime)",
       "0 DPD (Days Past Due) track across all active and closed tradelines",
@@ -1097,14 +1097,14 @@ export const FIVOSCORE_FACTORS_SPEC = [
   }
 ];
 
-// How FivoScore is Generated - Methodology Engine
+// How MSME Credit Score is Generated - Methodology Engine
 export const METHODOLOGY_STEPS = [
   {
     step: "01",
     phase: "Consent-Driven Data Ingestion",
     title: "Multi-Source API Telemetry",
     summary: "Instant, automated ingestion of verified regulatory and cash flow telemetry without physical paperwork.",
-    details: "Using open banking protocols and government APIs, FivoScore connects directly with GSTN (GSTR-1, GSTR-3B, GSTR-9), MCA21, CBDT PAN, Account Aggregator (AA) for 12 months of daily banking data, and commercial credit bureaus (CIBIL/Experian).",
+    details: "Using open banking protocols and government APIs, Manalix Technology connects directly with GSTN (GSTR-1, GSTR-3B, GSTR-9), MCA21, CBDT PAN, Account Aggregator (AA) for 12 months of daily banking data, and commercial credit bureaus (CIBIL/Experian).",
     integrations: ["GSTN Network", "RBI Account Aggregator", "MCA21 Registry", "CBDT PAN API", "Commercial Bureaus", "e-Courts / NCLT"]
   },
   {
@@ -1120,7 +1120,7 @@ export const METHODOLOGY_STEPS = [
     phase: "Dual-Index Algorithmic Scoring",
     title: "Ability to Pay vs Intention to Pay",
     summary: "Two distinct financial vectors are calculated independently to give a balanced, 360-degree risk profile.",
-    details: "FivoScore decouples creditworthiness into two mathematical pillars: 'Ability to Pay' (60% weight, gauging cash liquidity, margins, and debt service capacity) and 'Intention to Pay' (40% weight, gauging tax punctuality, supplier repayment tracks, and statutory discipline).",
+    details: "The Manalix scoring engine decouples creditworthiness into two mathematical pillars: 'Ability to Pay' (60% weight, gauging cash liquidity, margins, and debt service capacity) and 'Intention to Pay' (40% weight, gauging tax punctuality, supplier repayment tracks, and statutory discipline).",
     integrations: ["Ability to Pay Engine", "Intention to Pay Vector", "Cash Velocity Index", "Repayment Track Matrix"]
   },
   {
@@ -1136,12 +1136,12 @@ export const METHODOLOGY_STEPS = [
     phase: "Instant Underwriting & Capital Routing",
     title: "Credit Rating & Bank Pre-Approval",
     summary: "Translates the 300-900 score into pre-approved credit limits and routes directly to institutional lenders.",
-    details: "Your finalized FivoScore generates an instant bankable underwriting summary, assigns a credit tier (A+ to D), determines pre-approved unsecured credit lines, and matches you with partner banks & NBFCs like FinAGG, Tata Capital, and ICICI.",
+    details: "Your finalized Score generates an instant bankable underwriting summary, assigns a credit tier (A+ to D), determines pre-approved unsecured credit lines, and matches you with partner banks & NBFCs like FinAGG, Tata Capital, and ICICI.",
     integrations: ["Pre-Approved Loan Limits", "Instant Underwriting Memorandum", "NBFC / Bank API Handshake", "Automated Term Sheet"]
   }
 ];
 
-// Traditional Bureau vs FivoScore Comparison Data
+// Traditional Bureau vs Manalix AI Model Comparison Data
 export const COMPARISON_DATA = [
   {
     feature: "Primary Evaluation Core",

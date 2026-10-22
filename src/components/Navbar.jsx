@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logoImg from '../assets/logo.png';
 import { 
   Building2, 
   Search, 
@@ -28,18 +29,18 @@ export default function Navbar({ onEvaluateClick }) {
       <div className="navbar-inner">
         {/* Brand Logo */}
         <div className="brand-group">
-          <a href="#" className="brand-logo" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
-            <div className="logo-icon-wrap">
-              <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="32" height="32" rx="8" fill="#002E4B" />
-                <path d="M9 7H23V11H13.8V14.5H20.5V18.5H13.8V25H9V7Z" fill="#1EA7FF" />
-                <circle cx="23.5" cy="22.5" r="3.5" fill="#00D2B4" />
-              </svg>
-            </div>
-            <div className="logo-text-wrap">
-              <span className="logo-title">Fivo<span className="logo-accent">Score</span></span>
-              <span className="logo-badge">100% MSME</span>
-            </div>
+          <a 
+            href="#" 
+            className="brand-logo" 
+            onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+            title="Manalix Technology Pvt Ltd - Home"
+          >
+            <img 
+              src={logoImg} 
+              alt="Manalix Technology Pvt Ltd" 
+              className="navbar-brand-logo-img" 
+            />
+            <span className="logo-badge">100% MSME</span>
           </a>
 
           {/* Desktop Nav Links (100% MSME Focused) */}
@@ -125,7 +126,7 @@ export default function Navbar({ onEvaluateClick }) {
               className="mobile-nav-link"
               onClick={() => scrollToSection('how-it-works-section')}
             >
-              How FivoScore is Generated
+              How Score is Generated
             </button>
             <button 
               className="mobile-nav-link"
@@ -149,7 +150,7 @@ export default function Navbar({ onEvaluateClick }) {
               className="mobile-nav-link"
               onClick={() => scrollToSection('comparison-section')}
             >
-              CIBIL vs FivoScore for MSMEs
+              CIBIL vs Manalix for MSMEs
             </button>
             <button 
               className="mobile-nav-link"
@@ -162,7 +163,7 @@ export default function Navbar({ onEvaluateClick }) {
               onClick={() => { setMobileMenuOpen(false); onEvaluateClick(); }}
             >
               <Search size={16} />
-              <span>Check MSME FivoScore Free</span>
+              <span>Check MSME Score Free</span>
             </button>
           </div>
         </div>

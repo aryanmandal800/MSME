@@ -6,19 +6,19 @@ export default function FaqSection() {
 
   const faqs = [
     {
-      q: "What is FivoScore and how is it different from CIBIL?",
-      a: "FivoScore is an AI-powered MSME credit assessment tool developed by FinAGG. While CIBIL focuses predominantly on past loan repayment history and often excludes thin-file borrowers, FivoScore calculates a dynamic score (300 to 900) by analyzing real-time GST filing punctuality, banking cash flow velocity, supply chain relationships, and statutory compliance."
+      q: "What is the MSME Credit Score and how is it different from CIBIL?",
+      a: "Developed by Manalix Technology Pvt Ltd, this AI-powered MSME credit assessment tool calculates a dynamic score (300 to 900) by analyzing real-time GST filing punctuality, banking cash flow velocity, supply chain relationships, and statutory compliance. While CIBIL focuses predominantly on past loan repayment history and often excludes thin-file borrowers, Manalix evaluates actual business cash flows."
     },
     {
-      q: "Will checking my business FivoScore affect my commercial credit score?",
-      a: "No. Checking your FivoScore is a zero-impact 'soft assessment'. It queries regulatory telemetry and Account Aggregator data under your explicit consent and does NOT post a hard commercial bureau inquiry to CIBIL or Experian."
+      q: "Will checking my business Score affect my commercial credit score?",
+      a: "No. Checking your Score with Manalix Technology is a zero-impact 'soft assessment'. It queries regulatory telemetry and Account Aggregator data under your explicit consent and does NOT post a hard commercial bureau inquiry to CIBIL or Experian."
     },
     {
-      q: "What are the 6 core factors used to generate my FivoScore?",
+      q: "What are the 6 core factors used to generate my Score?",
       a: "The score is derived from: 1) GST Discipline & Filing Compliance (25%), 2) Bank Cash Flow Velocity & Liquidity (25%), 3) Commercial Bureau Tradelines (20%), 4) Supply Chain & Counterparty Quality (15%), 5) Statutory Compliance & Legal KYC (10%), and 6) Operational Vintage & Stability (5%)."
     },
     {
-      q: "How can an MSME improve their FivoScore if it is below 700?",
+      q: "How can an MSME improve their Score if it is below 700?",
       a: "The quickest ways to boost your score are: 1) File all GSTR-3B and GSTR-1 returns on time for at least 6 consecutive months, 2) Avoid NACH or cheque bounces by maintaining an Average Monthly Balance equivalent to 15 days of operating expenses, 3) Settle commercial lines with 0 Days Past Due (DPD), and 4) Clear any pending MCA annual secretarial filings."
     },
     {
@@ -26,12 +26,12 @@ export default function FaqSection() {
       a: "Yes. Our search engine allows you to input any registered Firm Name, 15-digit GSTIN, 10-digit PAN, or 21-digit CIN. The system cross-references national registries to generate an explainable, deterministic underwriting evaluation."
     },
     {
-      q: "How does the pre-approved credit facility work after FivoScore generation?",
+      q: "How does the pre-approved credit facility work after Score generation?",
       a: "Once your score is calculated, our underwriting algorithm translates your financial capacity into a pre-approved unsecured credit limit (e.g. ₹45 Lakhs). Through our integrated consortium of regulated partner banks and NBFCs (including FinAGG and Tata Capital), you can initiate instant digital disbursal without physical branch visits."
     },
     {
       q: "Is my business data and banking information secure?",
-      a: "Yes. FivoScore is ISO 27001 certified and operates under the Reserve Bank of India (RBI) Account Aggregator regulatory framework. All telemetry is encrypted in transit and at rest using 256-bit bank-grade TLS 1.3 cryptography."
+      a: "Yes. Manalix Technology is ISO 27001 certified and operates under the Reserve Bank of India (RBI) Account Aggregator regulatory framework. All telemetry is encrypted in transit and at rest using 256-bit bank-grade TLS 1.3 cryptography."
     }
   ];
 
@@ -48,7 +48,7 @@ export default function FaqSection() {
             Frequently Asked <span className="text-gradient">Questions</span>
           </h2>
           <p className="section-subtitle">
-            Everything you need to know about FivoScore assessment, factors, and MSME capital access.
+            Everything you need to know about Manalix Technology credit assessment, factors, and MSME capital access.
           </p>
         </div>
 

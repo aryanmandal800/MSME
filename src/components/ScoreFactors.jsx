@@ -41,10 +41,10 @@ export default function ScoreFactors({ onExploreFactor }) {
             <span>Comprehensive Evaluation Matrix</span>
           </div>
           <h2 className="section-title">
-            All Factors That Determine Your <span className="text-gradient">FivoScore</span>
+            All Factors That Determine Your <span className="text-gradient">Score</span>
           </h2>
           <p className="section-subtitle">
-            Unlike legacy credit systems that rely on static historical reports, FivoScore dynamically measures 
+            Unlike legacy credit systems that rely on static historical reports, Manalix dynamically measures 
             6 core operational pillars to evaluate true business creditworthiness.
           </p>
         </div>
@@ -125,7 +125,7 @@ export default function ScoreFactors({ onExploreFactor }) {
             <div className="insights-column">
               <div className="insight-box positive-box">
                 <div className="insight-title text-success">
-                  <CheckCircle2 size={16} color="#10B981" /> What Lenders Favor (High FivoScore)
+                  <CheckCircle2 size={16} color="#10B981" /> What Lenders Favor (High Score)
                 </div>
                 <p className="insight-body">{activeFactor.goodSigns}</p>
               </div>
